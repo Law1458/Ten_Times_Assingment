@@ -1,0 +1,184 @@
+.container {
+    width: 100%;
+    background-color: rgb(202, 238, 245);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .cardBox {
+        width: 80%;
+        background-color: #FFFFFF;
+        padding: 20px;
+        border-radius: 8px;
+        display: flex;
+        gap: 20px;
+
+        .left {
+            width: 50%;
+
+            .title {
+                input {
+                    width: 100%;
+                    font-size: 2rem;
+                    border: none;
+                    outline: none;
+                    padding: 10px 0px;
+                }
+            }
+
+            .date {
+                display: flex;
+                gap: 20px;
+                width: 100%;
+
+                .calender {
+                    display: flex;
+                    flex-direction: column;
+                    border: 1px solid gray;
+                    height: 100%;
+                    border-radius: 5px;
+
+                    .month {
+                        border-bottom: 1px solid gray;
+                        padding: 5px 8px 2px 8px;
+                        background-color: #F1F1F1;
+                        border-radius: 5px 5px 0px 0px;
+                    }
+
+                    .days {
+                        padding: 2px 8px 5px 8px;
+                        text-align: center;
+                    }
+                }
+
+                .dateWrapper {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    background-color: #F1F1F1;
+                    padding: 10px;
+                    border-radius: 10px;
+                    width: 100%;
+
+                    label {
+                        display: inline-block;
+                        width: 80px;
+                    }
+
+                    input {
+                        border: none;
+                        outline: none;
+                        color: black;
+                        font-size: 1rem;
+                        padding: 5px;
+                        background-color: #D1D1D1;
+                        width: calc(100% - 80px);
+                    }
+
+                    .timeZone {
+                        display: flex;
+                        gap: 20px;
+                    }
+
+                    .sessionType {
+                        display: flex;
+                        gap: 20px;
+                    }
+                }
+            }
+
+            .location {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                margin-top: 20px;
+
+                i {
+                    padding: 10px 15px;
+                    border: 1px solid gray;
+                    background-color: #D1D1D1;
+                    border-radius: 5px;
+                    height: 100%;
+                }
+
+                .locationBox {
+                    border: 1px solid gray;
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 5px;
+                    background-color: #D1D1D1;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+
+                    p,
+                    input {
+                        font-size: 1rem;
+                        font-weight: 600;
+                        color: rgb(41, 41, 41);
+                    }
+
+                    input {
+                        background-color: transparent;
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                        letter-spacing: 1px;
+                    }
+
+                    .subTitle {
+                        font-size: 0.8rem;
+                        color: rgb(88, 88, 88);
+                    }
+                }
+            }
+
+            .eventoption {
+                margin-top: 20px;
+            }
+
+            .button {
+                margin-top: 20px;
+
+                button {
+                    width: 100%;
+                    padding: 8px 0px;
+                    background-color: black;
+                    color: #FFFFFF;
+                    border: none;
+                    outline: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .right {
+            width: 50%;
+
+            .banner {
+                background-color: gold;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                border-radius: 20px;
+                padding: 10px;
+
+                img {
+                    width: 100%;
+                    border-radius: 10px;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    color: #FFFFFF;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

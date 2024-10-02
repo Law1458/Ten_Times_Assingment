@@ -1,0 +1,81 @@
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(202, 238, 245);
+    padding: 2rem 5rem;
+
+    .heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        title {
+            h1 {
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+        }
+
+        .toggle {
+            background-color: rgb(162, 199, 211);
+            padding: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 7px;
+
+            button {
+                border: none;
+                outline: none;
+                background-color: transparent;
+                padding: 5px 10px;
+                color: gray;
+                font-weight: 700;
+                cursor: pointer;
+            }
+
+            .active {
+                background-color: #dbf5f7;
+                color: #000000;
+                border-radius: 6px;
+            }
+        }
+    }
+
+    .addEvents {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        margin-top: 10px;
+
+        button {
+            padding: 5px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+
+    .body {
+        display: flex;
+        margin-top: 50px;
+        gap: 20px;
+
+        .date {
+            width: 20%;
+            border-right: 1px solid rgba(103, 116, 120, 0.235);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            position: sticky;
+        }
+
+        .cards {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}

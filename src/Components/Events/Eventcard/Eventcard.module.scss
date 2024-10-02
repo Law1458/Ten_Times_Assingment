@@ -1,0 +1,80 @@
+.container {
+    background-color: #dbf5f7;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .time {
+            font-size: 1.2rem;
+            color: gray;
+        }
+
+        .title {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .auther {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            i {
+                background-color: blue;
+                color: #FFFFFF;
+                padding: 5px 7px;
+                border-radius: 50%;
+            }
+
+            p {
+                font-size: 1rem;
+                color: gray;
+            }
+        }
+
+        .presentedBy {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+
+            i {
+                color: gray;
+                padding: 5px 7px;
+            }
+
+            p {
+                font-size: 1rem;
+                color: gray;
+
+            }
+        }
+
+        .invition {
+            button {
+                border: none;
+                outline: none;
+                background-color: rgb(0, 0, 194);
+                color: #FFFFFF;
+                padding: 5px 15px;
+                border-radius: 4px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .image {
+        width: 300px;
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
+}
